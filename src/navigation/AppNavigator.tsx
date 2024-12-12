@@ -10,10 +10,13 @@ export default function AppNavigator() {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName='TransactionHistory'
+        initialRouteName="TransactionHistory"
+        screenOptions={{
+          headerShown: false,
+        }}
       >
-        <Stack.Screen name='TransactionHistory' component={TransactionHistory} />
+        <Stack.Screen name="TransactionHistory" component={TransactionHistory} />
       </Stack.Navigator>
     </NavigationContainer>
-  )
+  );
 }
