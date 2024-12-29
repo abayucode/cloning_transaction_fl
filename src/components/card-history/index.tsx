@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
-import { styles } from './styles';
+import { styles, containerCard, txtTrxStatus, btnActionDetail } from './styles';
 
 export default function CardHistory(props: any) {
   const { transactionType } = props;
   return (
-    <View style={styles.containerCard}>
+    <TouchableOpacity style={containerCard(transactionType)}>
       <View>
         <View style={styles.wrapperTxtBank}>
           <Text style={styles.txtBankName}>Permata</Text>
@@ -13,13 +13,13 @@ export default function CardHistory(props: any) {
           <Text style={styles.txtBankName}>BNI</Text>
         </View>
         <Text style={styles.txtPicName}>- SYIFA SALSABYLA</Text>
-        <Text>Rp10.028 . 8 April 2020</Text>
+        <Text style={styles.txtPicName}>Rp10.028 . 8 April 2020</Text>
       </View>
       <View>
-        <TouchableOpacity style={styles.btnActionDetail(transactionType)}>
-          <Text style={styles.txtBankName}>{transactionType ? 'Pengecekkan' : 'Berhasil'}</Text>
-        </TouchableOpacity>
+        <View style={btnActionDetail(transactionType)}>
+          <Text style={txtTrxStatus(transactionType)}>{transactionType ? 'Pengecekkan' : 'Berhasil'}</Text>
+        </View>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 }
