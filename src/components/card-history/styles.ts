@@ -4,6 +4,7 @@ export const styles = StyleSheet.create({
   wrapperTxtBank: {
     display: 'flex',
     flexDirection: 'row',
+    alignItems: 'center',
   },
 
   txtPicName: {
@@ -16,6 +17,11 @@ export const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 14,
     color: '#000',
+  },
+
+  imgArrow: {
+    width: 25,
+    height: 25,
   },
 });
 

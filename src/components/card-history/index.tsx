@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Text, TouchableOpacity, View } from 'react-native';
+import { Image, Text, TouchableOpacity, View } from 'react-native';
 import { styles, containerCard, txtTrxStatus, btnActionDetail } from './styles';
 
 export default function CardHistory(props: any) {
@@ -9,7 +9,7 @@ export default function CardHistory(props: any) {
       <View>
         <View style={styles.wrapperTxtBank}>
           <Text style={styles.txtBankName}>Permata</Text>
-          <Text>{'-->'}</Text>
+          <Image source={require('../../../assets/icons/ic_arrow_2.png')} style={styles.imgArrow} />
           <Text style={styles.txtBankName}>BNI</Text>
         </View>
         <Text style={styles.txtPicName}>- SYIFA SALSABYLA</Text>
