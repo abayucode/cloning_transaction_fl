@@ -1,4 +1,5 @@
 import { StyleSheet, ViewStyle } from 'react-native';
+import { COLOR_PRIMARY_BLACK, COLOR_PRIMARY_WHITE } from '../../utils/constats';
 
 export const styles = StyleSheet.create({
   container: {
@@ -8,7 +9,7 @@ export const styles = StyleSheet.create({
   },
 
   txtRadio: {
-    color: '#000000',
+    color: COLOR_PRIMARY_BLACK,
     paddingLeft: 10,
   },
 });
@@ -16,7 +17,7 @@ export const styles = StyleSheet.create({
 export const fillCircle = (flag: boolean, color: string) => ({
   width: 11,
   height: 11,
-  backgroundColor: flag ? color ? color : 'gray' : '#FFFFFF',
+  backgroundColor: flag ? color ? color : 'gray' : COLOR_PRIMARY_WHITE,
   borderRadius: 50,
 });
 

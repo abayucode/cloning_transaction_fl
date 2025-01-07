@@ -1,8 +1,9 @@
 import { StyleSheet } from 'react-native';
+import { COLOR_PRIMARY_BLACK, COLOR_PRIMARY_CORAL_RED, COLOR_PRIMARY_GRAY, COLOR_PRIMARY_WHITE } from '../../utils/constats';
 
 export const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: COLOR_PRIMARY_WHITE,
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
@@ -13,36 +14,36 @@ export const styles = StyleSheet.create({
   icSearch: {
     width: 35,
     height: 35,
-    tintColor: '#B0B0B0'
+    tintColor: COLOR_PRIMARY_GRAY,
   },
 
   icArrowSort: {
     width: 20,
     height: 20,
-    tintColor: '#F9624A',
-    paddingLeft: 20
+    tintColor: COLOR_PRIMARY_CORAL_RED,
+    paddingLeft: 20,
   },
 
   wrapperSort: {
     display: 'flex',
     flexDirection: 'row',
-    alignItems: 'center'
+    alignItems: 'center',
   },
 
   txtSort: {
-    color: '#F9624A',
+    color: COLOR_PRIMARY_CORAL_RED,
     fontWeight: 'bold',
-    fontSize: 12
+    fontSize: 12,
   },
 
   searchInput: {
     alignSelf: 'flex-start',
-    color: '#000000',
+    color: COLOR_PRIMARY_BLACK,
   },
 
   wrapperSearch: {
     display: 'flex',
     flexDirection: 'row',
-    alignItems: 'center'
-  }
+    alignItems: 'center',
+  },
 });
