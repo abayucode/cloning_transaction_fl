@@ -2,6 +2,7 @@ import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from '../screens/HomeScreen';
+import TransactionDetail from '../screens/TransactionDetail';
 
 export default function AppNavigator() {
 
@@ -16,6 +17,7 @@ export default function AppNavigator() {
         }}
       >
         <Stack.Screen name="HomeScreen" component={HomeScreen} />
+        <Stack.Screen name="TransactionDetail" component={TransactionDetail} />
       </Stack.Navigator>
     </NavigationContainer>
   );
