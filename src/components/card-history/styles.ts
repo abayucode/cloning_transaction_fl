@@ -31,7 +31,7 @@ export const containerCard = (flag: boolean): ViewStyle => ({
   alignItems: 'center',
   justifyContent: 'space-between',
   borderLeftWidth: 5,
-  borderLeftColor: flag ? '#FC622B' : '#54B681',
+  borderLeftColor: flag ? '#54B681' : '#FC622B',
   paddingVertical: 15,
   paddingHorizontal: 15,
   borderRadius: 5,
@@ -42,15 +42,15 @@ export const containerCard = (flag: boolean): ViewStyle => ({
 export const txtTrxStatus = (flag: boolean): TextStyle => ({
   fontWeight: 'bold',
   fontSize: 14,
-  color: flag ? '#000' : '#FFFFFF',
+  color: flag ? '#FFFFFF' : '#000',
 });
 
 export const btnActionDetail = (flag: boolean): ViewStyle => ({
   borderWidth: 1.5,
-  borderColor: flag ? '#EC8565' : '#54B681',
+  borderColor: flag ? '#54B681' : '#EC8565',
   paddingHorizontal: 10,
   paddingVertical: 5,
   borderRadius: 5,
-  backgroundColor: flag ? '#FFFFFF' : '#54B681',
+  backgroundColor: flag ? '#54B681' : '#FFFFFF',
 });
 

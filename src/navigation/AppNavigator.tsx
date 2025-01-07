@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import TransactionHistory from '../features/transaction-history';
+import HomeScreen from '../screens/HomeScreen';
 
 export default function AppNavigator() {
 
@@ -10,12 +10,12 @@ export default function AppNavigator() {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="TransactionHistory"
+        initialRouteName="HomeScreen"
         screenOptions={{
           headerShown: false,
         }}
       >
-        <Stack.Screen name="TransactionHistory" component={TransactionHistory} />
+        <Stack.Screen name="HomeScreen" component={HomeScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
