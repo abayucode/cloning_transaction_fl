@@ -1,9 +1,10 @@
 import { StyleSheet } from 'react-native';
+import { COLOR_PRIMARY_WHITE_BACKGROUND } from '../../utils/constats';
 
 export const styles = StyleSheet.create({
   container: {
     paddingHorizontal: '2%',
     marginTop: 10,
-    backgroundColor: '#F5F7F6',
+    backgroundColor: COLOR_PRIMARY_WHITE_BACKGROUND,
   },
 });

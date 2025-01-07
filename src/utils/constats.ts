@@ -1,0 +1,9 @@
+export const COLOR_PRIMARY_GREEN = '#54B681';
+export const COLOR_PRIMARY_ORANGE = '#FC622B';
+export const COLOR_PRIMARY_WHITE = '#FFFFFF';
+export const COLOR_PRIMARY_BLACK = '#000';
+export const COLOR_PRIMARY_SALMON = '#EC8565';
+export const COLOR_PRIMARY_BLACK_TRANSPARENT = 'rgba(0, 0, 0, 0.5)';
+export const COLOR_PRIMARY_GRAY = '#B0B0B0';
+export const COLOR_PRIMARY_CORAL_RED = '#F9624A';
+export const COLOR_PRIMARY_WHITE_BACKGROUND = '#F5F7F6';

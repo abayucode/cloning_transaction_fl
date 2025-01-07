@@ -37,8 +37,6 @@ export default function TransactionHistory() {
     setTransactionList(Object.values(data ?? {}));
   }, [data]);
 
-  console.log('DATA ARR ', transactionList);
-
   return (
     <ScrollView style={styles.container}>
       <SearchComponent />
